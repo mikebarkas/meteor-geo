@@ -1,0 +1,14 @@
+<head>
+  <title>Places</title>
+</head>
+<body>
+  {{> places}}
+</body>
+
+
+<template name="places">
+  <h1>Places</h1>
+  {{#each places}}
+  {{pop}} - {{city}} : {{state}} : {{_id}}<br/>
+  {{/each}}
+</template>
