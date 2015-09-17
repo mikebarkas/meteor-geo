@@ -7,8 +7,11 @@
 
 
 <template name="places">
-  <h1>Places</h1>
+  <div class="ui raised text container segment">
+  <h1 class="ui header">Places</h1>
+
   {{#each places}}
   {{pop}} - {{city}} : {{state}} : {{_id}}<br/>
   {{/each}}
+  </div>
 </template>
