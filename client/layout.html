@@ -1,8 +1,19 @@
+<head>
+  <title>Places</title>
+</head>
+
 <Template name="layout">
-  <div class="ui fixed inverted menu">
-    <div class="ui container">
-      <a href="/" class="item">Places</a>
+  <div class="ui fixed inverted">
+    <div class="ui inverted labeled icon menu">
+      <a href="/" class="item">
+        <i class="rocket orange icon"></i>
+        Places
+      </a>
+      <a href="/two" class="item">
+        <i class="plane blue icon"></i>
+        Two
+      </a>
     </div>
   </div>
-    {{> places}}
+    {{> Template.dynamic template=main}}
 </template>

@@ -9,3 +9,4 @@ insecure
 semantic:ui
 flemay:less-autoprefixer
 kadira:flow-router
+kadira:blaze-layout
