@@ -8,3 +8,4 @@ meteor-platform
 insecure
 semantic:ui
 flemay:less-autoprefixer
+kadira:flow-router
