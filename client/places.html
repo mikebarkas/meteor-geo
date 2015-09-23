@@ -1,9 +1,12 @@
 <template name="places">
   <div class="ui main text container">
   <h1 class="ui header">Places</h1>
-
-  {{#each places}}
-  {{pop}} - {{city}} : {{state}} : {{_id}}<br/>
-  {{/each}}
+  {{#if Template.subscriptionsReady}}
+    {{#each places}}
+    {{pop}} - {{city}} : {{state}} : {{_id}}<br/>
+    {{/each}}
+  {{else}}
+    <h3>Loading...</h3>
+  {{/if}}
   </div>
 </template>
