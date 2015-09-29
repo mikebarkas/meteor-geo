@@ -1,10 +1,8 @@
 <template name="cityList">
   <h2>City List</h2>
   {{#if Template.subscriptionsReady}}
-  <select>
   {{#each list}}
-  <option>{{city}} - {{state}}</option>
+  <p>{{city}} - {{state}}</p>
    {{/each}}
-  </select>
    {{/if}}
 </template>
