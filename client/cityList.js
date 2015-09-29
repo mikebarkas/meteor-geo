@@ -9,6 +9,7 @@ Template.cityList.onCreated(function () {
 Template.cityList.helpers({
 
   list: function () {
-   return Places.find();
+   //return Places.find();
+   return Places.find({}, {fields: {city: 1, state: 1}, limit:8});
   }
 });
