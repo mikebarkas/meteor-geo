@@ -3,5 +3,6 @@ Meteor.publish('places', function () {
 });
 
 Meteor.publish('cityList', function () {
-  return Places.find({}, {fields: {city: 1, state: 1}, limit:80});
+  //return Places.find({}, {fields: {city: 1, state: 1}, limit:8});
+ return Places.find({}, {$limit: 20});
 });
