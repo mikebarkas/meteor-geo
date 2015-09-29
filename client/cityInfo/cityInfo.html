@@ -1,0 +1,22 @@
+<template name="cityInfo">
+  <div class="ui main text container">
+  <h1 class="ui header">City Info</h1>
+
+  <div class="ui inverted segment">
+    <div class="ui inverted left icon input">
+    <input type="text" id="city-search" placeholder="Search...">
+    <i class="search icon"></i>
+    </div>
+  </div>
+
+  <div>
+    {{#each cities}}
+    <p>{{city}} - {{state}}</p>
+    {{/each}}
+  </div>
+
+
+
+
+  </div>
+</template>
